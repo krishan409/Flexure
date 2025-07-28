@@ -220,7 +220,14 @@ body {
     gap: 10px;
 }
 
-
+.card,
+.cloth {
+    transition: transform 0.3s ease;
+}
+.card,
+.cloth:hover {
+    transform: scale(1.10);
+}
 /* footer */
 .footer {
     text-align: center;
