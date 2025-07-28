@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;  
+    background-color: black;
+    color: white;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+/* nav bar */
+.nav-container {
+    height: 12vh;
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+.icon {
+    padding-right: 20px;
+    font-size: 24px;
+}
+.nav-link {
+    display:none;
+}
+
+
+
+
+
+/* slider */
+.container {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+   
+}    
+
+.images {
+    width: 200xp;
+    gap: 50px;
+    height:100px;
+    display: flex;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.images{
+    animation: scroll 20s linear infinite;
+    animation-name: slide;
+}
+
+@keyframes slide {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-50%);}
+}
+
+/* image */
+.main-image{
+    width: 100%;
+    
+    
+}
+.main-image img {
+    
+    width: 100%;
+    height: 500px;
+    
+}
+
+/* flexure */
+.text {
+    width: 100%;
+    text-align: center;
+       
+}
+
+.text h1 {
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.text h1:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: 0.5s;
+
+}
+.text p {
+    color: #464444;    
+}
+
+.text p:hover {
+    color: #ffffff;    
+}
+/* buy card */
+.buy-card {
+    display: flex;
+    width: 100%;    
+    text-align: center;
+    
+}
+
+.card img{
+    height:500px;
+    width: 100%;
+           
+}
+
+
+
+.buy-button {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 10px 20px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  
+}
+
+.buy-button:hover {
+  background-color: #333;
+}
+
+
+@media (max-width:390px){
+
+.buy-card {
+    flex-wrap: wrap;    
+}
+.card img{
+    height: 200px;
+    width: 50%;
+    
+}
+.card{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-card-cloth {
+    flex-wrap: wrap;
+}
+.cloth{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cloth img{
+    height: 200px;
+    width: 50%;
+}
+.main-image img {
+    height: 300px;    
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #111;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+
+}
+
+}
+
+
+.buy-card-cloth {
+    gap: 27px;
+    display: flex;
+    width: 100%;    
+    text-align: center;
+    
+}
+.buy-card-cloth .card h2{
+    margin-top: 30px;
+}
+.buy-card-cloth .cloth{
+    gap: 10px;
+}
+
+
+/* footer */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    background-color: #111;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
